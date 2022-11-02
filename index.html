@@ -13,11 +13,70 @@
     <title>Favourite Music Albums</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Welcome</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Get Member</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Go to
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#top3">Top 3</a>
+              <a class="dropdown-item" href="#evergreens">Evergreens</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#hall-of-shame">Hall of Shame</a>
+              <a class="dropdown-item" href="#review-more">Review More</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Sign In to stream music 4 free</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
     <div class="container">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" id="top3">
         <h1>TOP 3</h1>
         <div class="row justify-content-center">
-          <div class="col-md-3">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3">
             <div class="card">
               <img
                 src="https://i.scdn.co/image/ab67616d0000b273578eea0a098f6da62ab21229"
@@ -31,11 +90,31 @@
                   <li class="list-group-item">Russian Rap</li>
                   <li class="list-group-item">Duration: 34min 26sec</li>
                 </ul>
-                <a href="#" class="btn btn-primary">stream now</a>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Songs
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">1. Hajime (Intro)</a>
+                    <a class="dropdown-item" href="#">2. OneLove</a>
+                    <a class="dropdown-item" href="#">3. Санавабич</a>
+                    <a class="dropdown-item" href="#">4. Половина моя</a>
+                    <a class="dropdown-item" href="#">5. Лабиринты</a>
+                    <a class="dropdown-item" href="#"
+                      >6. Без обид (feat. MaxiFam)</a
+                    >
+                    <a class="dropdown-item" href="#">7. Бэйба судьба</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3">
             <div class="card">
               <img
                 src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/63/a7/d5/63a7d585-00e0-bcec-1b61-b8aab26663b4/cover.jpg/1200x1200bf-60.jpg"
@@ -49,11 +128,30 @@
                   <li class="list-group-item">Russian Rap</li>
                   <li class="list-group-item">Duration: 32min 42sec</li>
                 </ul>
-                <a href="#" class="btn btn-primary">stream now</a>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Songs
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">1. Люби Меня</a>
+                    <a class="dropdown-item" href="#">2. Двигайся</a>
+                    <a class="dropdown-item" href="#">3. Фая</a>
+                    <a class="dropdown-item" href="#">4. Самая</a>
+                    <a class="dropdown-item" href="#">5. I Сan Fly</a>
+                    <a class="dropdown-item" href="#">6. Нирвана</a>
+                    <a class="dropdown-item" href="#">7. Бошка</a>
+                    <a class="dropdown-item" href="#">8. I Got Love</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3">
             <div class="card">
               <img
                 src="https://upload.wikimedia.org/wikipedia/en/5/5e/50_Cent_-_The_Massacre.png"
@@ -67,16 +165,65 @@
                   <li class="list-group-item">American Hip Hop</li>
                   <li class="list-group-item">Duration: 79min 11sec</li>
                 </ul>
-                <a href="#" class="btn btn-primary">Album Details</a>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Songs
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">1. Intro</a>
+                    <a class="dropdown-item" href="#">2. In My Hood</a>
+                    <a class="dropdown-item" href="#">3. This is 50</a>
+                    <a class="dropdown-item" href="#"
+                      >4. I'm Supposed to Die Tonight</a
+                    >
+                    <a class="dropdown-item" href="#">5. Piggy Bank</a>
+                    <a class="dropdown-item" href="#">6. Gatman and Robin</a>
+                    <a class="dropdown-item" href="#">7. Candy Shop</a>
+                    <a class="dropdown-item" href="#">8. Outta Control</a>
+                    <a class="dropdown-item" href="#">9. Get In My Car</a>
+                    <a class="dropdown-item" href="#">10. Ski Mask Way</a>
+                    <a class="dropdown-item" href="#"
+                      >11. A Baltimore Love Thing</a
+                    >
+                    <a class="dropdown-item" href="#">12. Ryder Music</a>
+                    <a class="dropdown-item" href="#">13. Disco Inferno</a>
+                    <a class="dropdown-item" href="#">14. Just a Lil' Bit</a>
+                    <a class="dropdown-item" href="#">15. Gunz Come Out</a>
+                    <a class="dropdown-item" href="#"
+                      >16. My Toy Soldier (Ft. Tony Yayo)</a
+                    >
+                    <a class="dropdown-item" href="#">17. Position of Power</a>
+                    <a class="dropdown-item" href="#"
+                      >18. Build You Up (Ft. Jamie Foxx)</a
+                    >
+                    <a class="dropdown-item" href="#">19. God Gave Me Style</a>
+                    <a class="dropdown-item" href="#"
+                      >20. So Amazing (Ft. Olivia)</a
+                    >
+                    <a class="dropdown-item" href="#">21. I Don't Need 'Em</a>
+                    <a class="dropdown-item" href="#"
+                      >22. Hate It or Love It (G-Unit Remix) (Ft. The Game,
+                      Lloyd Banks, Tony Yayo & Young Buck)</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      >23. Outta Control (Remix) (Ft. Mobb Deep)</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row justify-content-center mt-5">
+      <div class="row justify-content-center mt-5" id="evergreens">
         <h1>Evergreens</h1>
         <div class="row justify-content-left">
-          <div class="col-md-3">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3">
             <div class="card">
               <img
                 src="https://m.media-amazon.com/images/I/81IbWMp4hlL._SL1400_.jpg"
@@ -90,11 +237,31 @@
                   <li class="list-group-item">American Hip Hop</li>
                   <li class="list-group-item">Duration: 44min 2sec</li>
                 </ul>
-                <a href="#" class="btn btn-primary">stream now</a>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Songs
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">1. Hajime (Intro)</a>
+                    <a class="dropdown-item" href="#">2. OneLove</a>
+                    <a class="dropdown-item" href="#">3. Санавабич</a>
+                    <a class="dropdown-item" href="#">4. Половина моя</a>
+                    <a class="dropdown-item" href="#">5. Лабиринты</a>
+                    <a class="dropdown-item" href="#"
+                      >6. Без обид (feat. MaxiFam)</a
+                    >
+                    <a class="dropdown-item" href="#">7. Бэйба судьба</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3">
             <div class="card">
               <img
                 src="https://upload.wikimedia.org/wikipedia/en/3/35/The_Eminem_Show.jpg"
@@ -108,11 +275,31 @@
                   <li class="list-group-item">American Hip Hop</li>
                   <li class="list-group-item">Duration: 66min 15sec</li>
                 </ul>
-                <a href="#" class="btn btn-primary">stream now</a>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Songs
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">1. Hajime (Intro)</a>
+                    <a class="dropdown-item" href="#">2. OneLove</a>
+                    <a class="dropdown-item" href="#">3. Санавабич</a>
+                    <a class="dropdown-item" href="#">4. Половина моя</a>
+                    <a class="dropdown-item" href="#">5. Лабиринты</a>
+                    <a class="dropdown-item" href="#"
+                      >6. Без обид (feat. MaxiFam)</a
+                    >
+                    <a class="dropdown-item" href="#">7. Бэйба судьба</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3">
             <div class="card">
               <img
                 src="https://i.pinimg.com/originals/3f/9b/1a/3f9b1ab0095226f5af5f5720e1a49acd.jpg"
@@ -126,11 +313,31 @@
                   <li class="list-group-item">American Hip Hop</li>
                   <li class="list-group-item">Duration: 24min 49sec</li>
                 </ul>
-                <a href="#" class="btn btn-primary">Album Details</a>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Songs
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">1. Hajime (Intro)</a>
+                    <a class="dropdown-item" href="#">2. OneLove</a>
+                    <a class="dropdown-item" href="#">3. Санавабич</a>
+                    <a class="dropdown-item" href="#">4. Половина моя</a>
+                    <a class="dropdown-item" href="#">5. Лабиринты</a>
+                    <a class="dropdown-item" href="#"
+                      >6. Без обид (feat. MaxiFam)</a
+                    >
+                    <a class="dropdown-item" href="#">7. Бэйба судьба</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3">
             <div class="card">
               <img
                 src="https://m.media-amazon.com/images/I/61D9WRbRnnL.jpg"
@@ -144,11 +351,334 @@
                   <li class="list-group-item">German Rap</li>
                   <li class="list-group-item">Duration: 55min 12sec</li>
                 </ul>
-                <a href="#" class="btn btn-primary">Album Details</a>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Songs
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">1. Hajime (Intro)</a>
+                    <a class="dropdown-item" href="#">2. OneLove</a>
+                    <a class="dropdown-item" href="#">3. Санавабич</a>
+                    <a class="dropdown-item" href="#">4. Половина моя</a>
+                    <a class="dropdown-item" href="#">5. Лабиринты</a>
+                    <a class="dropdown-item" href="#"
+                      >6. Без обид (feat. MaxiFam)</a
+                    >
+                    <a class="dropdown-item" href="#">7. Бэйба судьба</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img
+                src="https://hiphop-releases.de/wp-content/uploads/2017/06/Azad-Nxtlvl-Album-Cover.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">NXT LVL</h5>
+                <h6 class="card-artist">Azad</h6>
+                <ul class="list-group mb-4">
+                  <li class="list-group-item">German Rap</li>
+                  <li class="list-group-item">Duration: 45min 18sec</li>
+                </ul>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Songs
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">1. Hajime (Intro)</a>
+                    <a class="dropdown-item" href="#">2. OneLove</a>
+                    <a class="dropdown-item" href="#">3. Санавабич</a>
+                    <a class="dropdown-item" href="#">4. Половина моя</a>
+                    <a class="dropdown-item" href="#">5. Лабиринты</a>
+                    <a class="dropdown-item" href="#"
+                      >6. Без обид (feat. MaxiFam)</a
+                    >
+                    <a class="dropdown-item" href="#">7. Бэйба судьба</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img
+                src="https://m.media-amazon.com/images/I/61nZbfDQwvL._SS500_.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Best of Selfmade</h5>
+                <h6 class="card-artist">Kallegah</h6>
+                <ul class="list-group mb-4">
+                  <li class="list-group-item">German Rap</li>
+                  <li class="list-group-item">Duration: 75min 32sec</li>
+                </ul>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Songs
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">1. Hajime (Intro)</a>
+                    <a class="dropdown-item" href="#">2. OneLove</a>
+                    <a class="dropdown-item" href="#">3. Санавабич</a>
+                    <a class="dropdown-item" href="#">4. Половина моя</a>
+                    <a class="dropdown-item" href="#">5. Лабиринты</a>
+                    <a class="dropdown-item" href="#"
+                      >6. Без обид (feat. MaxiFam)</a
+                    >
+                    <a class="dropdown-item" href="#">7. Бэйба судьба</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img
+                src="https://m.media-amazon.com/images/I/81V-rkaoWHL._SL1500_.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Asphalt Massaka 3</h5>
+                <h6 class="card-artist">Farid Bang</h6>
+                <ul class="list-group mb-4">
+                  <li class="list-group-item">German Rap</li>
+                  <li class="list-group-item">Duration: 65min 19sec</li>
+                </ul>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Songs
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">1. Hajime (Intro)</a>
+                    <a class="dropdown-item" href="#">2. OneLove</a>
+                    <a class="dropdown-item" href="#">3. Санавабич</a>
+                    <a class="dropdown-item" href="#">4. Половина моя</a>
+                    <a class="dropdown-item" href="#">5. Лабиринты</a>
+                    <a class="dropdown-item" href="#"
+                      >6. Без обид (feat. MaxiFam)</a
+                    >
+                    <a class="dropdown-item" href="#">7. Бэйба судьба</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img
+                src="http://rap.de/wp-content/uploads/haftbefehl-cover.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Russisch Roulette</h5>
+                <h6 class="card-artist">Haftbefehl</h6>
+                <ul class="list-group mb-4">
+                  <li class="list-group-item">German Rap</li>
+                  <li class="list-group-item">Duration: 82min 4sec</li>
+                </ul>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Songs
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">1. Hajime (Intro)</a>
+                    <a class="dropdown-item" href="#">2. OneLove</a>
+                    <a class="dropdown-item" href="#">3. Санавабич</a>
+                    <a class="dropdown-item" href="#">4. Половина моя</a>
+                    <a class="dropdown-item" href="#">5. Лабиринты</a>
+                    <a class="dropdown-item" href="#"
+                      >6. Без обид (feat. MaxiFam)</a
+                    >
+                    <a class="dropdown-item" href="#">7. Бэйба судьба</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="row justify-content-center" id="hall-of-shame">
+        <!-- HALL OF SHAME -->
+        <h1>Hall of Shame</h1>
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img
+                src="https://m.media-amazon.com/images/I/81unOOrF2iL._SS500_.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">In the Zone</h5>
+                <h6 class="card-artist">Britney Spears</h6>
+                <ul class="list-group mb-4">
+                  <li class="list-group-item">Pop</li>
+                  <li class="list-group-item">Duration: 84min 31sec</li>
+                </ul>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Songs
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">1. Hajime (Intro)</a>
+                    <a class="dropdown-item" href="#">2. OneLove</a>
+                    <a class="dropdown-item" href="#">3. Санавабич</a>
+                    <a class="dropdown-item" href="#">4. Половина моя</a>
+                    <a class="dropdown-item" href="#">5. Лабиринты</a>
+                    <a class="dropdown-item" href="#"
+                      >6. Без обид (feat. MaxiFam)</a
+                    >
+                    <a class="dropdown-item" href="#">7. Бэйба судьба</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img
+                src="https://i.etsystatic.com/5617357/r/il/eb099e/934814957/il_fullxfull.934814957_61st.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Separate Ways</h5>
+                <h6 class="card-artist">Elvis Presley</h6>
+                <ul class="list-group mb-4">
+                  <li class="list-group-item">Rock 'n Roll</li>
+                  <li class="list-group-item">Duration: 62min 7sec</li>
+                </ul>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Songs
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">1. Люби Меня</a>
+                    <a class="dropdown-item" href="#">2. Двигайся</a>
+                    <a class="dropdown-item" href="#">3. Фая</a>
+                    <a class="dropdown-item" href="#">4. Самая</a>
+                    <a class="dropdown-item" href="#">5. I Сan Fly</a>
+                    <a class="dropdown-item" href="#">6. Нирвана</a>
+                    <a class="dropdown-item" href="#">7. Бошка</a>
+                    <a class="dropdown-item" href="#">8. I Got Love</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img
+                src="https://cdns-images.dzcdn.net/images/cover/8fa04196f67f1ec492af11a01735784c/200x200.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Multiply</h5>
+                <h6 class="card-artist">Xzibit</h6>
+                <ul class="list-group mb-4">
+                  <li class="list-group-item">American Hip Hop</li>
+                  <li class="list-group-item">Duration: 55min 24sec</li>
+                </ul>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Songs
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">1. Intro</a>
+                    <a class="dropdown-item" href="#">2. In My Hood</a>
+                    <a class="dropdown-item" href="#">3. This is 50</a>
+                    <a class="dropdown-item" href="#"
+                      >4. I'm Supposed to Die Tonight</a
+                    >
+                    <a class="dropdown-item" href="#">5. Piggy Bank</a>
+                    <a class="dropdown-item" href="#">6. Gatman and Robin</a>
+                    <a class="dropdown-item" href="#">7. Candy Shop</a>
+                    <a class="dropdown-item" href="#">8. Outta Control</a>
+                    <a class="dropdown-item" href="#">9. Get In My Car</a>
+                    <a class="dropdown-item" href="#">10. Ski Mask Way</a>
+                    <a class="dropdown-item" href="#"
+                      >11. A Baltimore Love Thing</a
+                    >
+                    <a class="dropdown-item" href="#">12. Ryder Music</a>
+                    <a class="dropdown-item" href="#">13. Disco Inferno</a>
+                    <a class="dropdown-item" href="#">14. Just a Lil' Bit</a>
+                    <a class="dropdown-item" href="#">15. Gunz Come Out</a>
+                    <a class="dropdown-item" href="#"
+                      >16. My Toy Soldier (Ft. Tony Yayo)</a
+                    >
+                    <a class="dropdown-item" href="#">17. Position of Power</a>
+                    <a class="dropdown-item" href="#"
+                      >18. Build You Up (Ft. Jamie Foxx)</a
+                    >
+                    <a class="dropdown-item" href="#">19. God Gave Me Style</a>
+                    <a class="dropdown-item" href="#"
+                      >20. So Amazing (Ft. Olivia)</a
+                    >
+                    <a class="dropdown-item" href="#">21. I Don't Need 'Em</a>
+                    <a class="dropdown-item" href="#"
+                      >22. Hate It or Love It (G-Unit Remix) (Ft. The Game,
+                      Lloyd Banks, Tony Yayo & Young Buck)</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      >23. Outta Control (Remix) (Ft. Mobb Deep)</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center" id="review-more">
+        <h1>Review more Albums</h1>
       </div>
     </div>
     <script
