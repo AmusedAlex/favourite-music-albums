@@ -50,7 +50,9 @@ body {
 
 .deleteButton {
   opacity: 0;
-  transition: opacity 1s;
+  transition: all 1s;
+  transition-property: opacity, background-image;
+  background-image: linear-gradient(to left, red, orange);
 }
 
 @keyframes fadeInDeleteBtn {
@@ -63,6 +65,12 @@ body {
   }
 }
 .trackRow:hover .deleteButton {
-  animation: fadeInDeleteBtn ease-in 1s;
+  animation: fadeInDeleteBtn ease-in-out 1s;
   opacity: 1;
+  background-image: linear-gradient(to left, orange, red);
+  transition: background-image 1s;
+}
+
+.trackRow:hover {
+  border: 2px solid greenyellow;
 }
