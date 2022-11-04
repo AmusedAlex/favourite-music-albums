@@ -52,7 +52,7 @@ body {
   opacity: 0;
   transition: all 1s;
   transition-property: opacity, background-image;
-  background-image: linear-gradient(to left, red, orange);
+  background-image: linear-gradient(to left, orange, red);
 }
 
 @keyframes fadeInDeleteBtn {
