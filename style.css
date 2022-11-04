@@ -7,3 +7,62 @@ body {
     linear-gradient(127deg, rgba(0, 255, 0, 0.332), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(255, 0, 0, 0.306), rgba(0, 0, 255, 0) 70.71%);
 }
+
+.jumboTron {
+  background-image: url(https://images.alphacoders.com/116/1169862.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  animation: fadeInAni ease-in 3s;
+}
+
+@keyframes fadeInAni {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.card {
+  position: relative;
+}
+
+.cardBadge {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.addTrackButton {
+  transform: translateY(5px);
+  transition: all 1s;
+  transition-property: transform, box-shadow;
+  box-shadow: 0px 0px 0px 0px transparent;
+}
+
+.addTrackButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 14px 14px 0px grey;
+}
+
+.deleteButton {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+@keyframes fadeInDeleteBtn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.trackRow:hover .deleteButton {
+  animation: fadeInDeleteBtn ease-in 1s;
+  opacity: 1;
+}
